@@ -5,6 +5,14 @@
     <title>App IMC</title>
 </head>
 <body>
+    <script>
+        function calculaIMC(){
+            let massa = document.getElementById("massa").value;  
+            let altura = document.getElementById("altura").value;  
+            console.log("Massa: "+massa);  
+            console.log("Altura: "+altura);  
+        }
+    </script>
 
     <form>
         <label for="massa">Massa:</label><br> 
@@ -13,11 +21,7 @@
         <input type="number" id="altura" name="altura" valeu="0"><br><br>
     </form>
 
-    <script>
-        function calculaIMC(){
-            console.log("Teste da função calcula IMC!"); 
-        }
-    </script>
+
     <button onclick="calculaIMC()"> Calcular IMC </button>
    
 </body>
