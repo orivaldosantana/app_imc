@@ -11,6 +11,8 @@
             let altura = document.getElementById("altura").value;  
             console.log("Massa: "+massa);  
             console.log("Altura: "+altura);  
+            let imc = massa/(altura**2)
+            document.getElementById("resultado").innerHTML = "Resultado: "+imc 
         }
     </script>
 
@@ -21,8 +23,9 @@
         <input type="number" id="altura" name="altura" valeu="0"><br><br>
     </form>
 
-
     <button onclick="calculaIMC()"> Calcular IMC </button>
+
+    <p id="resultado">Resultado: </p>
    
 </body>
 </html>
